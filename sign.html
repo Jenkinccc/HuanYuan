@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>注册登录-环元</title>
+	<link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+  <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="CSS/sign.css">
+
+  
+</head>
+
+<body>
+<div class="logo search d3" align="center">
+	<img src="img/ico/HY LOGO.png" ></div>	
+	
+	
+<div class="nav" align="center">
+	<ul class="none" >
+		<li><a href="index.html">主页</a></li>	
+		<li><a href="sign.html">环元账号</a></li>
+		</ul>
+	</div>
+
+</div>
+
+  <div class="form">
+      
+      <ul class="tab-group">
+        <li class="tab active"><a href="#signup">注册</a></li>
+        <li class="tab"><a href="#login">登录</a></li>
+      </ul>
+      
+      <div class="tab-content">
+        <div id="signup">   
+          <h1>注册环元账号</h1>
+          
+          <form action="/" method="post">
+          
+          <div class="top-row">
+            <div class="field-wrap">
+              <label>
+                姓<span class="req">*</span>
+              </label>
+              <input type="text" required autocomplete="off" />
+            </div>
+        
+            <div class="field-wrap">
+              <label>
+                名<span class="req">*</span>
+              </label>
+              <input type="text"required autocomplete="off"/>
+            </div>
+          </div>
+
+          <div class="field-wrap">
+            <label>
+              电子邮箱<span class="req">*</span>
+            </label>
+            <input type="email"required autocomplete="off"/>
+          </div>
+          
+          <div class="field-wrap">
+            <label>
+              设置密码<span class="req">*</span>
+            </label>
+            <input type="password"required autocomplete="off"/>
+          </div>
+          
+          <button type="submit" class="button"/>完成</button>
+          
+          </form>
+
+        </div>
+        
+        <div id="login">   
+          <h1>欢迎回来！</h1>
+          
+          <form action="/" method="post">
+          
+            <div class="field-wrap">
+            <label>
+             您的邮箱<span class="req">*</span>
+            </label>
+            <input type="email"required autocomplete="off"/>
+          </div>
+          
+          <div class="field-wrap">
+            <label>
+              您的密码<span class="req">*</span>
+            </label>
+            <input type="password"required autocomplete="off"/>
+          </div>
+          
+          <p class="forgot"><a href="#">忘记了密码？</a></p>
+          
+          <button class="button"/>登录</button>
+          
+          </form>
+
+        </div>
+        
+      </div><!-- tab-content -->
+      
+</div> <!-- /form -->
+  <script src='js/jquery.min.js'></script>
+
+    <script  src="js/index.js"></script>
+
+</body>
+</html>

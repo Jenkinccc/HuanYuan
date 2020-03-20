@@ -1,0 +1,359 @@
+@charset "utf-8";
+/* CSS Document */
+/* 基本代码存放库 */
+	.logo img{ /* 设置网页左上角LOGO */
+		width:204px; 
+		height:79px;
+
+	} 
+	.time{
+	font color="#FF0000";
+	
+	
+}
+	.nav{     /* 圆角边框 */ 
+       height:80px;
+       line-height:80px;
+       background:#ededed;
+       border-radius:0 0 15px 15px;
+	}
+	.nav li{
+         float:left;
+         width:150px;
+         text-align:center;
+		
+	}
+	.nav a{
+         display:block;
+         color:#44B0E4;
+		 text-align:center;
+				
+	}
+	.nav a:hover{
+          color:white;
+          background:#99C0FC;
+			
+	}
+   ul_1.none {
+	   list-style-type: none;/* 去除li前的点 */
+	}
+	a {
+		text-decoration: none;/* 去除下划线 */
+	}
+	
+		
+	.hbtn {
+      position: relative;/*position语法： 
+position : static absolute relative 
+
+position参数：
+static : 　无特殊定位，对象遵循HTML定位规则
+absolute : 　将对象从文档流中拖出，使用left，right，top，bottom等属性进行绝对定位。而其层叠通过css z-index属性定义。此时对象不具有边距，但仍有补白和边框
+relative : 　对象不可层叠，但将依据left，right，top，bottom等属性在正常文档流中偏移位置
+
+position说明：
+设置对象的定位方式，可以让布局层容易位置绝对定位，控制盒子对象更加准确。*/
+		
+      box-sizing: border-box;/* 属性用于更改用于计算元素宽度和高度的默认的 CSS盒子模型 */
+      display: inline-block;
+      overflow: hidden;/* 防溢出 */
+      padding: 8px 20px;
+      margin: 0px 3px 6px;
+      text-align: center;
+      border: 2px solid rgb(255, 225, 155);
+      text-decoration: none;
+      color: rgb(255, 255, 255);
+      white-space: nowrap;/* 规定语句中的文本不进行换行 */
+      z-index: 0; /* 设置元素的堆叠顺序。拥有更高堆叠顺序的元素总是会处于堆叠顺序较低的元素的前面 */
+} 
+ 
+
+
+/* 搜索框部分  */
+div.search {padding: 30px 0；float:left;}
+form {
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+  float:right;
+}
+.d3 {background: #2c3e50;}/*#F9F0DA */
+.d3 form {
+  background: #7BC3EB;
+}
+.d3 input, .d3 button {
+	float:left;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+.d3 input {
+  width: 100%;
+  height: 42px;
+  padding-left: 15px;
+}
+.d3 button {
+  height: 42px;
+  width: 42px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+.d3 button:before {
+  content: "\f003";
+  font-family: Font-Awesome;
+  font-size: 16px;
+  color: #F9F0DA;
+}
+
+/* 背景图片设置 */
+.scale img{
+
+background-size:contain|cover;
+
+width:100%;
+
+height: auto;
+
+}
+
+
+/* 注册表单登录 */
+
+
+
+
+
+/* 下拉菜单 */
+
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: #2c3e50;
+  font-family: "Open Sans", sans serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.title {
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.title span {
+  display: block;
+  text-transform: none;
+  font-size: .70em;
+}
+
+.contenedor-acordeon {
+  width: 400px;
+  overflow: hidden;
+  border-radius: 3px;
+}
+
+.acordeon {
+  width: 100%;
+  overflow: hidden;
+}
+.acordeon__head {
+  background: #ecf0f1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .90em;
+  border-bottom: 0.2px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 3px rgba(128, 128, 128, 0.5) inset;
+}
+.acordeon__head:hover {
+  cursor: pointer;
+}
+.acordeon__head--logo, .acordeon__head--title, .acordeon__head .icon {
+  pointer-events: none;
+}
+.acordeon__head--logo {
+  width: 8%;
+}
+.acordeon__head--title {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: .95em;
+  font-weight: 600;
+}
+.acordeon__head .icon {
+  font-size: .80em;
+}
+.acordeon__body {
+  background: #1a252f;
+  height: 0;
+  transition: height .4s ease-in-out;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2) inset;
+}
+.acordeon__body__menu {
+  list-style: none;
+}
+.acordeon__body__menu li_1 {
+  border-bottom: 0.2px solid rgba(0, 0, 0, 0.3);
+  padding: .90em;
+}
+.acordeon__body__menu li_1 a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 1em 0 1em 1.5em;
+  font-size: .95em;
+  line-height: 1.2em;
+  font-weight: 600;
+}
+
+.active {
+  height: 56px;
+}
+
+/*  弹性动画展开菜单  */
+
+body {
+  background-color: #F2F3F4; 
+}
+
+#wrapper {
+  text-align:center;
+  font-family: 'Lato', sans-serif;
+  text-transform:uppercase;
+}
+
+
+#toolbar {  
+  width:100%;
+  max-width:670px;
+  min-width:550px;
+  margin: 70px auto;
+}
+
+.button {
+  width:70px;
+  height:70px;
+  border-radius:50%;
+  background-color:#3AB09E;
+  color:#ffffff;
+  text-align:center;
+  font-size:3.5em;
+  position:relative;
+  left:50%;
+  margin-left:-35px;
+  z-index:1;
+}
+
+.button,.icons{
+  -webkit-transition: -webkit-all 1s cubic-bezier(.87,-.41,.19,1.44);
+          transition:  all 1s cubic-bezier(.87,-.41,.19,1.44);
+}
+
+.button:after {
+  content:"+";
+}
+
+.button.active {
+-webkit-transform: rotate(45deg);
+ transform: rotate(45deg);
+  left:60px;
+}
+
+
+.icons {
+  width:0%;
+  overflow:hidden;
+  height:36px;
+  padding:16px 10px 10px 50px;
+  background-color:#ffffff;
+  box-shadow: 1px 1px 1px 1px #DCDCDC;
+  margin:-68px 0 0 45%;
+  border-radius: 2em;
+}
+
+.icons.open {
+  width:80%;
+  margin:-68px 0 0 5%;
+  overflow:hidden;
+}
+
+.icons li {
+  display: none;
+  width:10%;
+  color:#3AB09E;
+}
+
+.icons.open li {
+  width:16%;
+  display: inline-block;
+}
+
+
+/* 轮播图部分 */
+
+
+
+/* 文字滚动 */
+        .box1 {
+            width: 300px;
+            margin: 0 auto;
+            border: 1px solid #2C3E50;
+            overflow: hidden;
+        }
+ 
+        .animate {
+            padding-left: 20px;
+            font-size: 12px;
+            color: #FFF;
+            display: inline-block;
+            white-space: nowrap;
+            animation: 10s wordsLoop linear infinite normal;
+        }
+ 			
+
+
+		.box2 {
+            width: 300px;
+            margin: 0 auto;
+            border: 1px solid #99C0FC;
+            overflow: hidden;
+        }
+ 
+        .animate2 {
+            padding-left: 40px;
+            font-size: 14px;
+            color: #02A6DF;
+            display: inline-block;
+            white-space: nowrap;
+            animation: 10s wordsLoop linear infinite normal;
+        }
+
+
+        @keyframes wordsLoop {
+            0% {
+                transform: translateX(200px);
+                -webkit-transform: translateX(200px);
+            }
+            100% {
+                transform: translateX(-100%);
+                -webkit-transform: translateX(-100%);
+            }
+        }
+ 
+        @-webkit-keyframes wordsLoop {
+            0% {
+                transform: translateX(200px);
+                -webkit-transform: translateX(200px);
+            }
+            100% {
+                transform: translateX(-100%);
+                -webkit-transform: translateX(-100%);
+            }
+        }

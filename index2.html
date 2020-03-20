@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>huanyuan - Bring you closer to your dreams</title>
+<link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+<link href="CSS/style.css" rel="stylesheet"/>
+<link href="CSS/search.css" rel="stylesheet"/>
+<link href="CSS/roll.css" rel="stylesheet"/>
+<link href="CSS/font-awesome.min.css" rel="stylesheet"/>
+<script src="js/jquery-3.1.1.min.js"></script>
+<body>	   
+
+	<!--搜索框--> 
+	<div class="search d3"><div class="logo box1">
+	<img src="img/ico/ring element.png" >
+		
+    <p class="animate">
+        The huanyuan planet is open!
+    </p>
+</div></div>
+	<form>
+	 <input type="text" placeholder="search...">
+	 <button type="submit"></button>
+	</form>
+	<div id="time" style="color:#99CCFF" ></div>
+	</div>	
+	
+<div class="nav">
+	<ul_1 class="none">
+		<li><a href="sign.html">Account</a></li>
+		<li><a href="plant.html">Plant</a></li>
+		<li><a href="index.html">Domestic Edition</a></li>
+		<li><a href="wait.html">join huanyuan</a></li>
+		<li><a href="city services.html">Plant services</a></li>
+		</ul>
+	</div>
+	</div>
+	<!--轮播--> 
+<script src="js/roll.js" type="text/javascript"></script>
+	
+<div class="box">
+
+	<div class="list">
+		
+			<li_1 class="p7"><a href="#"><img src="img/1.jpg" alt="" /></a></li_1>
+			<li_1 class="p6"><a href="#"><img src="img/2.jpg" alt="" /></a></li_1>
+			<li_1 class="p5"><a href="#"><img src="img/3.jpg" alt="" /></a></li_1>
+			<li_1 class="p4"><a href="#"><img src="img/4.jpg" alt="" /></a></li_1>
+			<li_1 class="p3"><a href="#"><img src="img/5.jpg" alt="" /></a></li_1>
+			<li_1 class="p2"><a href="#"><img src="img/6.jpg" alt="" /></a></li_1>
+			<li_1 class="p1"><a href="#"><img src="img/7.jpg" alt="" /></a></li_1>
+		
+	</div>
+	
+	<a href="javascript:;" class="prev btn"><</a>
+	<a href="javascript:;" class="next btn">></a>
+
+	<div class="buttons">
+		<a href="javascript:;"><span class="blue"></span></a>
+		<a href="javascript:;"><span></span></a>
+		<a href="javascript:;"><span></span></a>
+		<a href="javascript:;"><span></span></a>
+		<a href="javascript:;"><span></span></a>
+		<a href="javascript:;"><span></span></a>
+		<a href="javascript:;"><span></span></a>
+	</div>
+</div>
+
+<!--动态时间 -->	
+<script type="text/javascript">	
+	
+function timeprint()
+{
+var week; var date;
+var today=new Date()
+var year=today.getFullYear()
+var month=today.getMonth()+1
+var day=today.getDate()
+var ss=today.getDay()
+var hours=today.getHours()
+var minutes=today.getMinutes()
+var seconds=today.getSeconds()
+date=day+"."+month+"."+year+". "
+if(ss==0) week="Sunday"
+if(ss==1) week="Monday"
+if(ss==2) week="Tuesday"
+if(ss==3) week="Wednesday"
+if(ss==4) week="Thursday"
+if(ss==5) week="Friday"
+if(ss==6) week="Saturday"
+if(minutes<=9)
+minutes="0"+minutes
+if(seconds<=9)
+seconds="0"+seconds
+myclock="Tourists, Hello! current time:"+date+week+" "+hours+":"+minutes+":"+seconds+" \n "
+if(document.layers){document.layers.time.document.write(myclock)
+document.layers.time.document.close()
+}else
+document.getElementById('time').innerHTML=myclock
+setTimeout("timeprint()",1000)
+}
+timeprint();
+</script>
+
+
+</body>
+</html>
